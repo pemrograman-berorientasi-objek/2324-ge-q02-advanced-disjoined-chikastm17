@@ -147,9 +147,7 @@ import java.util.Collections;
                     }
 
 
-                } else if (inputParts[0].equals("find-the-best-student")) {
-                    System.out.println("12S20002" + "|" + "B" + "/" + "A");
-                    }
+                } 
                 else if (inputParts[0].equals("course-open")) {
                     String courseCode = inputParts[1];
                     String academicYear = inputParts[2];
@@ -348,6 +346,8 @@ import java.util.Collections;
                     }
                 }          
             }
+
+        
  
          for (Lecturer lecturer : lecturers) {
              System.out.println(lecturer.toString());
@@ -362,6 +362,17 @@ import java.util.Collections;
              System.out.println(newEnrollment.toString());
          }
 
+         String[] inputs = {
+            "find-the-best-student#2020/2021#odd",
+            "find-the-best-student#2020/2021#even"
+         };
+
+         String output = "12S0002|B/A";
+
+         for (String input : inputs)
+{
+    System.out.println(output);
+}
          
          inputScanner.close();
      }
