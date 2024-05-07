@@ -73,7 +73,6 @@ import java.util.Collections;
                  course[index] = enrollment.getStudent();
                  index++;
              }
-
          }
          for (int i = 0; i < index; i++) {
             for (int j = i + 1; j < index; j++) {
@@ -135,7 +134,6 @@ import java.util.Collections;
                      students.add(newStudent);
                  }
              } 
-            
              else if (inputParts[0].equals("lecturer-add")) {
                  Lecturer newLecturer = new Lecturer(inputParts[1], inputParts[2], inputParts[3], inputParts[4], inputParts[5]);
                  if (!lecturers.contains(newLecturer)) {
@@ -240,9 +238,6 @@ import java.util.Collections;
                         enrollments.add(newEnrollment);   
                     }
                 }
-                
-                
-
             else if (inputParts[0].equals("enrollment-grade")) {
                  for (Enrollment enrollment : enrollments) {
                      if (enrollment.getStudent().equals(inputParts[1]) && enrollment.getCourse().equals(inputParts[2])
@@ -292,11 +287,7 @@ import java.util.Collections;
                          break;
                      }
                  }
-                }
-                else if (inputParts[0].equals("find-the-best-student")) {
-                    System.out.println("12S20002" + "|" + "B" + "/" + "A");
-                    }
-                else if (inputParts[0].equals("student-transcript")) {
+                }else if (inputParts[0].equals("student-transcript")) {
                     String studentId = inputParts[1];
                 
                     class TranscriptProcessor {
