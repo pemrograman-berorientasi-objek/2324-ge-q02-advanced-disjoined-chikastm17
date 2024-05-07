@@ -361,18 +361,8 @@ import java.util.Collections;
          for (Enrollment newEnrollment : enrollments) {
              System.out.println(newEnrollment.toString());
          }
+         
 
-         String[] inputs = {
-            "find-the-best-student#2020/2021#odd",
-            "find-the-best-student#2020/2021#even"
-         };
-
-         String output = "12S0002|B/A";
-
-         for (String input : inputs)
-{
-    System.out.println(output);
-}
          
          inputScanner.close();
      }
