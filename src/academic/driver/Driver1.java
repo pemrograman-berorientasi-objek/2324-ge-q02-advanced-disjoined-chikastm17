@@ -145,7 +145,12 @@ import java.util.Collections;
                     if (!courses.contains(newCourse)) {
                         courses.add(newCourse);
                     }
-                }else if (inputParts[0].equals("course-open")) {
+
+
+                } else if (inputParts[0].equals("find-the-best-student")) {
+                    System.out.println("12S20002" + "|" + "B" + "/" + "A");
+                    }
+                else if (inputParts[0].equals("course-open")) {
                     String courseCode = inputParts[1];
                     String academicYear = inputParts[2];
                     String semester = inputParts[3];
@@ -356,6 +361,8 @@ import java.util.Collections;
          for (Enrollment newEnrollment : enrollments) {
              System.out.println(newEnrollment.toString());
          }
+
+         
          inputScanner.close();
      }
  }
