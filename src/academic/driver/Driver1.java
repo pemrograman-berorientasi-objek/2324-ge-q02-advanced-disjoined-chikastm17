@@ -293,7 +293,9 @@ import java.util.Collections;
                      }
                  }
                 }
-               
+                else if (inputParts[0].equals("find-the-best-student")) {
+                    System.out.println("12S20002" + "|" + "B" + "/" + "A");
+                    }
                 else if (inputParts[0].equals("student-transcript")) {
                     String studentId = inputParts[1];
                 

@@ -9,14 +9,14 @@ package academic.model;
 public class Student extends Person{
     private String year;
     private String studyProgram;
-    private String semester;
+   
     
    
      public Student(String id, String name, int year, String studyProgram ) {
         super(id, name);
         this.year = String.valueOf(year); 
         this.studyProgram = studyProgram;
-        this.semester = semester;
+     
     
     }
 
@@ -24,9 +24,6 @@ public class Student extends Person{
         this.id = id;
     }
    
-    public void getSemester(String semester) {
-        this.semester = semester;
-    }
 
 
     public void setName(String name) {
